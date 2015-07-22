@@ -1,0 +1,7 @@
+useDynLib(FastGP)
+import(RcppEigen)
+importFrom(Rcpp, evalCpp)
+importFrom(mvtnorm,rmvnorm,dmvnorm)
+importFrom(rbenchmark, benchmark)
+importFrom(MASS,mvrnorm)
+exportPattern("^[[:alpha:]]+")
