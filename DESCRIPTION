@@ -1,12 +1,12 @@
 Package: FastGP
 Type: Package
-Title: Functions for Efficiently Using Gaussian Processes Implemented with Rcpp and RcppEigen
+Title: Efficiently Using Gaussian Processes with Rcpp and RcppEigen
 Version: 1.0
 Date: 2015-07-20
 Author: Giri Gopalan, Luke Bornn
 Maintainer: Giri Gopalan <gopalan88@gmail.com>
-Description: This is an R package that contains functions optimized with RcppEigen and Rcpp that are useful for Gaussian Process models.
+Description: Contains Rcpp and RcppEigen implementations of matrix operations useful for Gaussian process models, such as the inversion of a symmetric Toeplitz matrix, sampling from multivariate normal distributions, evaluation of the log-density of a multivariate normal vector, and Bayesian inference for latent variable Gaussian process models with elliptical slice sampling (Murray, Adams, and MacKay 2010).
 License: GPL-2
-Imports: RcppEigen, Rcpp, MASS, mvtnorm, rbenchmark 
+Imports: Rcpp, MASS, mvtnorm, rbenchmark, stats 
 LinkingTo: Rcpp, RcppEigen
 Repository: CRAN
