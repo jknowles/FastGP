@@ -1,7 +1,7 @@
 Package: FastGP
 Type: Package
 Title: Efficiently Using Gaussian Processes with Rcpp and RcppEigen
-Version: 1.1
+Version: 1.2
 Date: 2015-07-20
 Author: Giri Gopalan, Luke Bornn
 Maintainer: Giri Gopalan <gopalan88@gmail.com>
