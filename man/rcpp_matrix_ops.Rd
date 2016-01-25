@@ -23,7 +23,7 @@ tinv(A)
   \item{A}{Matrix to perform operation on.}
   }
 \details{
-  Functions with "rcppeigen" directly call RcppEigen implementations of the associated functions; rcppeigen_get_chol_stable retrieves L and rcppeigen_get_chol_diag(A) retrieves D in LDL^T form. Thanks to Jared Knowles who pointed out this variant and has found it useful for his package https://github.com/jknowles/merTools.  \code{tinv} inverts a symmetric Toeplitz matrix using methods from Trench and Durbin from "Matrix Computations" by Golub and Van Loan using Rcpp.
+  Functions with "rcppeigen" directly call RcppEigen implementations of the associated functions; rcppeigen_get_chol_stable retrieves L and rcppeigen_get_chol_diag(A) retrieves D in A = LDL^T form, whereas rcppeigen_get_chol(A) retrieves L in A = LL^T form.  Thanks to Jared Knowles who pointed out that the former variant had been more stable (with a potential speed trade-off) and has found it useful for his package https://github.com/jknowles/merTools.  \code{tinv} inverts a symmetric Toeplitz matrix using methods from Trench and Durbin from "Matrix Computations" by Golub and Van Loan using Rcpp.
   }
 \author{gopalan88@gmail.com}
 \examples{
